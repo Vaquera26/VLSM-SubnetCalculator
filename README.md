@@ -44,3 +44,15 @@ Additionally, the results include a **step-by-step breakdown** of the VLSM calcu
 
 ![Juan Fernando Vaquera Sanchez](https://firebasestorage.googleapis.com/v0/b/vaquera-github.firebasestorage.app/o/Juan-Fernando-Vaquera-Sanchez-Images%2FVLSM2.jpeg?alt=media&token=8847e94c-5f2e-4f7a-becc-9e117175a411)
 
+## About
+<div align="center">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vaquera-github.firebasestorage.app/o/Juan-Fernando-Vaquera-Sanchez-Images%2FJuan%20Fernando%20Vaquera.PNG?alt=media&token=35ba9787-1dd1-41ac-a253-d7eacb022247" width="150" style="border-radius:50%;">
+
+  ### 👋 Hi, I'm **Juan Fernando Vaquera Sánchez**  
+
+  📫 **Email:** [juan.tec@outlook.com](mailto:juan.tec@outlook.com)  
+  🌐 **Website:** [codexvaquera.studio](https://www.codexvaquera.studio/)  
+  💼 **LinkedIn:** [linkedin.com/in/juan-vaquera-ln](https://www.linkedin.com/in/juan-vaquera-ln/)  
+  🐙 **GitHub:** [github.com/Vaquera26](https://github.com/Vaquera26)  
+  
+</div>
