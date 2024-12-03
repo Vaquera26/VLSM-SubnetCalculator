@@ -1,0 +1,326 @@
+.contenedor-calculadora {
+    background-color: #0f0722;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 50px;
+    padding-left: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor-calculadora::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 500px;
+    height: 500px;
+    background-color: #289784;
+    border-radius: 50%;
+    filter: blur(150px);
+    transform: translate(50%, -50%);
+    z-index: 0;
+}
+
+.barra-navegacion, .seccion-entrada, .seccion-subred, .total-hosts {
+    position: relative;
+    z-index: 1;
+}
+
+.barra-navegacion {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.enlace-nav {
+    padding-left: 80px;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.enlace-nav:hover {
+    color: #31C7B5;
+}
+
+.barra-navegacion::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, black, #31C7B5, black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.titulo {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-left: 0;
+}
+
+.titulo-vlsm {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 200px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    background: linear-gradient(90deg, #0000FF, #00FFCC);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: 0;
+}
+
+.seccion-entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.contenedor-ip {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.entrada-ip {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-size: 48px;
+    padding: 10px;
+    margin-right: 20px;
+    width: 70%;
+}
+
+.entrada-ip.invalido {
+    border-bottom: 1px solid rgb(255, 60, 60);
+}
+
+.mensaje-error {
+    color: rgb(255, 60, 60);
+    margin-top: -20px;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.numero-total-hosts {
+    font-size: 48px;
+    margin-top: 10px;
+  }
+  
+  .mensaje-error.excedido {
+    padding: 10px;
+  }
+  
+  .fila-subred {
+    display: flex;
+    flex-direction: column; /* Asegura que el mensaje de error esté debajo */
+    margin-bottom: 10px;
+}
+
+.subred-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Añade espacio entre el label, input, y botón */
+}
+
+.mensaje-error.abajo {
+    margin-top: 5px; /* Añade un margen superior para separar el mensaje del input */
+    font-size: 12px;
+    color: red; /* Asegura que el mensaje de error esté en rojo */
+    align-self: flex-start; /* Alinea el mensaje a la izquierda */
+}
+
+.mensaje-error.valido {
+    color: rgb(60, 255, 60);
+}
+
+.boton-calcular {
+    background-color: #070311;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #31C7B5;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.boton-calcular:hover {
+    background-color: white;
+    color: black;
+}
+
+.seccion-subred {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.fila-subred {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fila-subred label {
+    margin-right: 10px;
+}
+
+.entrada-hosts {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    width: 100px;
+}
+
+.boton-agregar-subred {
+    background-color: #070311;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #31C7B5;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.boton-agregar-subred:hover {
+    background-color: white;
+    color: black;
+}
+
+.total-hosts {
+    text-align: left;
+    margin-top: 0px;
+}
+
+.total-hosts h3 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .subred-section, .tabla-section {
+    width: 70%;
+  }
+  
+  .tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 40px; /* Para dar un margen entre la tabla y el botón */
+  }
+  
+  .tabla-resultados th, .tabla-resultados td {
+    padding: 12px 15px;
+    border: 1px solid #444;
+  }
+  
+  .tabla-resultados thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .tabla-resultados tbody tr:nth-child(even) {
+    background-color: #2c2c2c;
+  }
+  
+  .tabla-resultados tbody tr:nth-child(odd) {
+    background-color: #3c3c3c;
+  }
+  
+  .tabla-resultados tbody tr:hover {
+    background-color: #1c1c1c;
+  }
+
+  .explicacion-pasos {
+    margin-top: 50px;
+}
+
+.paso-explicacion {
+    margin-bottom: 30px;
+}
+
+.paso-explicacion h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contenido-explicacion p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.tabla-resultados th, .tabla-resultados td {
+    padding: 12px 15px;
+    border: 1px solid #444;
+}
+
+.tabla-resultados thead {
+    background-color: #333;
+    color: #fff;
+}
+
+.tabla-resultados tbody tr:nth-child(even) {
+    background-color: #2c2c2c;
+}
+
+.tabla-resultados tbody tr:nth-child(odd) {
+    background-color: #3c3c3c;
+}
+
+.tabla-resultados tbody tr:hover {
+    background-color: #1c1c1c;
+}
