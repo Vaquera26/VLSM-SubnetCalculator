@@ -40,9 +40,9 @@ Additionally, the results include a **step-by-step breakdown** of the VLSM calcu
 
 ## 📸  Photos
 
-![Juan Fernando Vaquera Sanchez](https://firebasestorage.googleapis.com/v0/b/vaquera-github.firebasestorage.app/o/Juan-Fernando-Vaquera-Sanchez-Images%2FVLSM1.jpeg?alt=media&token=d054d51c-0688-4fc0-a63c-26892705c188)
+![Juan Fernando Vaquera Sanchez](https://github.com/Vaquera26/VLSM-SubnetCalculator/blob/main/Photos/VLSM1.jpeg?raw=true)
 
-![Juan Fernando Vaquera Sanchez](https://firebasestorage.googleapis.com/v0/b/vaquera-github.firebasestorage.app/o/Juan-Fernando-Vaquera-Sanchez-Images%2FVLSM2.jpeg?alt=media&token=8847e94c-5f2e-4f7a-becc-9e117175a411)
+![Juan Fernando Vaquera Sanchez](https://github.com/Vaquera26/VLSM-SubnetCalculator/blob/main/Photos/VLSM2.jpeg?raw=true)
 
 ## About
 <div align="center">
